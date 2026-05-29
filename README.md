@@ -82,6 +82,7 @@ These ARE specific design tastes. Use them when you want a defined aesthetic fro
 | `/gpt-taste` | Editorial typography, gapless bento grids, GSAP ScrollTriggers (pinning, stacking, scrubbing), massive section spacing. |
 | `/stitch-design-taste` | Google Stitch system — premium, anti-generic, strict typography, perpetual micro-motion. |
 | `/minimalist-ui` | Editorial-style — warm monochrome, typographic contrast, flat bento, muted pastels. No gradients, no heavy shadows. |
+| `/cosmic-glass-dashboard` | Dark dashboard — aurora-lit backdrop, frosted glass panels, per-section tone tints, cyan/violet/magenta accents. Ships a drop-in `theme.css` + `starter.html` you rebrand from one block. |
 | `/industrial-brutalist-ui` | Swiss print meets military terminal — rigid grids, extreme type contrast, analog degradation. |
 | `/taste-skill` | The base taste framework that informs the others. |
 
@@ -102,7 +103,7 @@ These ARE specific design tastes. Use them when you want a defined aesthetic fro
 
 ## Suggested first moves
 
-Don't try to use all 36 at once. Start here:
+Don't try to use all 37 at once. Start here:
 
 1. **`/impeccable`** — give it a brief, watch it build. This is the default.
 2. **`/critique`** — point it at what you just made. Get a scored review.

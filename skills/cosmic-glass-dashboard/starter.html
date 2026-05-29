@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmic Glass — Starter Dashboard</title>
+  <!-- The ONLY file you need. Rebrand by editing theme.css :root tokens. -->
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    /* page-local layout only — not part of the design system */
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .topbar-actions { display: flex; align-items: center; gap: 0.6rem; }
+    .hero { padding: 1.5rem; margin-bottom: 1rem; }
+    .nav-list { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.5rem; }
+    .card-body { color: var(--cg-muted); font-size: 0.85rem; line-height: 1.55; margin: 0.5rem 0 0; }
+    .card-row { display: flex; align-items: center; gap: 0.7rem; }
+    .card-foot { display: flex; gap: 0.5rem; margin-top: 1rem; }
+    .pad { padding: 1.1rem; }
+  </style>
+</head>
+<body>
+  <!-- 1. ambient backdrop (sits behind everything) -->
+  <div class="ambient-scene">
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="aurora aurora-c"></div>
+    <div class="holo-grid"></div>
+  </div>
+
+  <div class="cg-shell">
+    <!-- 2. sidebar -->
+    <aside class="cg-sidebar">
+      <div class="brand-lockup">
+        <div class="brand-orb">◆</div>
+        <div><strong>Your Brand</strong><span>Dashboard</span></div>
+      </div>
+      <nav class="nav-list">
+        <button class="nav-pill active"><span class="nav-icon">⬡</span><span><strong>Overview</strong><small>Today at a glance</small></span></button>
+        <button class="nav-pill"><span class="nav-icon">◷</span><span><strong>Pipeline</strong><small>Work in flight</small></span></button>
+        <button class="nav-pill"><span class="nav-icon">▤</span><span><strong>Library</strong><small>Everything saved</small></span></button>
+        <button class="nav-pill"><span class="nav-icon">◈</span><span><strong>Reports</strong><small>Performance</small></span></button>
+        <button class="nav-pill"><span class="nav-icon">⚙</span><span><strong>Settings</strong><small>Preferences</small></span></button>
+      </nav>
+      <div class="profile-card">
+        <div class="avatar">YB</div>
+        <div><strong>Your Name</strong><span><i class="live-dot"></i>Online</span></div>
+      </div>
+    </aside>
+
+    <!-- 3. main -->
+    <main class="cg-main">
+      <div class="topbar">
+        <label class="search-shell"><span>⌕</span><input placeholder="Search anything…" /></label>
+        <div class="topbar-actions">
+          <button class="ghost-action compact">Filters</button>
+          <button class="primary-action">New item</button>
+        </div>
+      </div>
+
+      <!-- hero -->
+      <section class="glass-panel tone-cyan hero">
+        <span class="glass-sweep"></span>
+        <p class="eyebrow">Overview</p>
+        <h1 class="cg-display">A headline that says<br />what this view is for.</h1>
+        <p class="cg-lede">One or two sentences of orienting copy. Keep it calm and declarative — the gradients do the talking.</p>
+        <div class="card-foot">
+          <button class="primary-action">Primary action</button>
+          <button class="ghost-action">Secondary</button>
+        </div>
+      </section>
+
+      <!-- KPI row -->
+      <div class="kpi-grid" style="margin: 1rem 0;">
+        <div class="glass-panel tone-cyan kpi-card"><span class="kpi-label">Total</span><span class="kpi-value">128</span></div>
+        <div class="glass-panel tone-violet kpi-card"><span class="kpi-label">Active</span><span class="kpi-value">42</span></div>
+        <div class="glass-panel tone-magenta kpi-card"><span class="kpi-label">Pending</span><span class="kpi-value">7</span></div>
+        <div class="glass-panel tone-emerald kpi-card"><span class="kpi-label">Done</span><span class="kpi-value">79</span></div>
+      </div>
+
+      <!-- content grid -->
+      <div class="dashboard-grid">
+        <section class="glass-panel tone-violet col-8 pad">
+          <span class="glass-sweep"></span>
+          <div class="panel-head">
+            <div><p class="eyebrow">Detail</p><h2>A primary content panel</h2></div>
+            <span class="status-pill">Live</span>
+          </div>
+          <p class="card-body">This wide panel holds your main object — a table, a chart, an editor. The tone class (here, violet) tints its glow, eyebrow dot, and status pill automatically.</p>
+          <div class="metric-cells" style="margin-top: 1rem;">
+            <div class="metric-cell"><span>views</span><strong>12.4k</strong></div>
+            <div class="metric-cell"><span>saves</span><strong>880</strong></div>
+            <div class="metric-cell"><span>shares</span><strong>214</strong></div>
+          </div>
+        </section>
+
+        <section class="glass-panel tone-magenta col-4 pad">
+          <span class="glass-sweep"></span>
+          <div class="card-row">
+            <span class="icon-bubble">✦</span>
+            <div><p class="eyebrow">Side</p><h2 style="margin:.2rem 0 0;font-size:1rem;color:#fff;">A companion card</h2></div>
+          </div>
+          <p class="card-body">A narrower panel for context, a feed, or a call to action.</p>
+          <div class="card-foot"><button class="ghost-action compact">Open</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
